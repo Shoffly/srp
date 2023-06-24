@@ -87,7 +87,6 @@ col1, col2 = st.columns(2)
 # Display the metrics in separate columns
 col1.metric(label="Revenue",value= formatted_revenue)
 col2.metric(label="Transactions", value=formatted_tc)
-col2.metric(label="Top Item", value=total_tcs)
 col1.metric(label="Average order value", value=formatted_aov)
 
 #Display a branch breakdown of sales in a pie chart
