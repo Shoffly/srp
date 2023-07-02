@@ -101,7 +101,7 @@ customer_counts['CustomerType'] = customer_counts['TransactionCount'].apply(lamb
 customer_counts_pie = customer_counts.groupby('CustomerType')['TransactionCount'].count()
 
 #page contents
-st.title("SMS Segment")
+st.title("SMS Campaign Tool")
 
 # Use columns layout manager
 col1, col2 = st.columns(2)
