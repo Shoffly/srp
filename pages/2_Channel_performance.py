@@ -50,8 +50,6 @@ customer_counts.columns = ['CustomerID', 'TransactionCount']
 customer_counts['CustomerType'] = customer_counts['TransactionCount'].apply(lambda x: 'Returning' if x > 1 else 'New')
 
 customer_counts_pie = customer_counts.groupby('CustomerType')['TransactionCount'].count()
-st.dataframe(customer_counts)
-st.dataframe(customer_counts_pie)
 
 # comparison date section
 st.sidebar.write('''Pick Comparison Dates''')
